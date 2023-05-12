@@ -26,7 +26,7 @@ for (let i = 0; i < teamMembersNameArray.length; i++){
     newTeamMemberObj = {
         "name" : teamMembersNameArray[i],
         "role" : teamMembersRoleArray[i],
-        "photo" : teamMemberPhotoArray[i]
+        "photo" : `<img src="/img/${teamMemberPhotoArray[i]}" alt="member-immage">`
     };
     teamMembersArray.push(newTeamMemberObj);
     // Stampare le stesse informazioni su DOM sottoforma di stringhe
@@ -41,7 +41,5 @@ for (let i = 0; i < teamMembersNameArray.length; i++){
 
     console.log(teamMembersArray);
 }
-
-
 
 
