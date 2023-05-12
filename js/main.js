@@ -10,3 +10,20 @@
 // Trasformare la stringa foto in una immagine effettiva
 // BONUS 2: Organizzare i singoli membri in card/schede
 
+
+// Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
+const teamMembersNameArray = ["Wayne Barnett", "Angela Caroll", "Walter Gordon", "Angela Lopez", "Scott Estrada", "Barbara Ramos"];
+const teamMembersRoleArray = ["Founder & CEO", "Chief Editor", "Office Manager", "Social Media Manager", "Developer", "Graphic Designer"];
+const teamMemberPhotoArray = ["wayne-barnett-founder-ceo.jpg", "angela-caroll-chief-editor.jpg", "walter-gordon-office-manager.jpg", "angela-lopez-social-media-manager.jpg", "scott-estrada-developer.jpg", "barbara-ramos-graphic-designer.jpg"];
+const teamMembersArray = [];
+let newTeamMemberName, newTeamMemberRole, newTeamMemberPhoto;
+
+const newTeamMemberObj = {
+    "name" : newTeamMemberName,
+    "role" : newTeamMemberRole,
+    "photo" : newTeamMemberPhoto
+};
+
+teamMembersArray.push(newTeamMemberObj);
+
+for (let i = 0; i < )
