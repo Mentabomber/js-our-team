@@ -40,7 +40,14 @@ img{
     width: 100px;
     height: 100px;
 }
-
+#grid img{
+    filter: brightness(.5);
+    border-radius: 50%;
+}
+#grid img:hover{
+    filter: brightness(1);
+    cursor: pointer;
+}
 button{
     height: 25px;
     width: 40px;
@@ -73,6 +80,9 @@ main{
     flex-wrap: wrap;
     margin: auto;
     width: 800px;
+}
+#grid span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #grid img{
     width: 250px;
