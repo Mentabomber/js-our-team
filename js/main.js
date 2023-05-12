@@ -15,15 +15,28 @@
 const teamMembersNameArray = ["Wayne Barnett", "Angela Caroll", "Walter Gordon", "Angela Lopez", "Scott Estrada", "Barbara Ramos"];
 const teamMembersRoleArray = ["Founder & CEO", "Chief Editor", "Office Manager", "Social Media Manager", "Developer", "Graphic Designer"];
 const teamMemberPhotoArray = ["wayne-barnett-founder-ceo.jpg", "angela-caroll-chief-editor.jpg", "walter-gordon-office-manager.jpg", "angela-lopez-social-media-manager.jpg", "scott-estrada-developer.jpg", "barbara-ramos-graphic-designer.jpg"];
-const teamMembersArray = [];
-let newTeamMemberName, newTeamMemberRole, newTeamMemberPhoto;
+let elSelector = document.getElementById("contenitore");
 
-const newTeamMemberObj = {
-    "name" : newTeamMemberName,
-    "role" : newTeamMemberRole,
-    "photo" : newTeamMemberPhoto
-};
+// Creare l’array di oggetti con le informazioni fornite.
+let teamMembersArray = [];
+let newTeamMemberObj = {};
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+for (let i = 0; i < teamMembersNameArray.length; i++){
+    newTeamMemberObj = {
+        "name" : teamMembersNameArray[i],
+        "role" : teamMembersRoleArray[i],
+        "photo" : teamMemberPhotoArray[i]
+    };
+    teamMembersArray.push(newTeamMemberObj);
+    // Stampare le stesse informazioni su DOM sottoforma di stringhe
+    for(let key in newTeamMemberObj){
+        elSelector.innerHTML += `<span> ${newTeamMemberObj[key]} </span>`;
+        elSelector.append();
+    }
 
-teamMembersArray.push(newTeamMemberObj);
+    console.log(teamMembersArray);
+}
 
-for (let i = 0; i < )
+
+
+
