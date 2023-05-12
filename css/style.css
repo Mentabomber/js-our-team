@@ -71,6 +71,10 @@ main{
     height: 500px;
     width: 500px;
 }
+.grid-cards{
+    width: calc(100% / 2);
+
+}
 #counter-grid{}
 .btn-num{
     padding: 10px;

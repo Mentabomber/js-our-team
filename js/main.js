@@ -30,7 +30,7 @@ for (let i = 0; i < teamMembersNameArray.length; i++){
     };
     teamMembersArray.push(newTeamMemberObj);
     // Stampare le stesse informazioni su DOM sottoforma di stringhe
-    elSelector.innerHTML += `<div></div>`;
+    elSelector.innerHTML += `<div class="grid-cards"></div>`;
     elSelector.append();
     for(let key in newTeamMemberObj){
         divSelector = elSelector.querySelector("div:last-child");
