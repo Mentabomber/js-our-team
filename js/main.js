@@ -22,11 +22,12 @@ let teamMembersArray = [];
 let newTeamMemberObj = {};
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 let divSelector;
-for (let i = 0; i < teamMembersNameArray.length; i++){
+for (let i = 0; i < teamMembersNameArray.length /* <-- la lunghezza di tutti gli array dei membri è uguale ma dovrei usare magari qualcos'altro perché così sembra un'accrocchio */; i++){
     newTeamMemberObj = {
+        "photo" : `<img src="/img/${teamMemberPhotoArray[i]}" alt="member-immage">`,
         "name" : teamMembersNameArray[i],
-        "role" : teamMembersRoleArray[i],
-        "photo" : `<img src="/img/${teamMemberPhotoArray[i]}" alt="member-immage">`
+        "role" : teamMembersRoleArray[i]
+        
     };
     teamMembersArray.push(newTeamMemberObj);
     // Stampare le stesse informazioni su DOM sottoforma di stringhe

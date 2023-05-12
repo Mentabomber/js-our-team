@@ -29,6 +29,13 @@ header{
     justify-content: end;
     display: none;
 }
+#div-titolo{
+    text-align: center;
+}
+
+#div-titolo h3, #div-titolo h4{
+    padding: 10px;
+}
 img{
     width: 100px;
     height: 100px;
@@ -55,25 +62,33 @@ main{
 }
 
 #contenitore{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
     padding: 50px;
     width: 1080px;
     margin: auto;
-
 }
 
 #grid{
     display: flex;
     flex-wrap: wrap;
-    height: 500px;
-    width: 500px;
+    margin: auto;
+    width: 800px;
+}
+#grid img{
+    width: 250px;
+    height: 250px;
 }
 .grid-cards{
     width: calc(100% / 2);
+    
 
+}
+.grid-cards span{
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
 }
 #counter-grid{}
 .btn-num{
